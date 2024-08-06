@@ -22,11 +22,11 @@ jobs:
         run: npm ci
 
       - name: Build config1
-        run: npm run build-user
+        run: npm run build-user1
 
       - name: Build config2
-        run: npm run build-admin
-
+        run: npm run build:config2
+        
       - name: Test Config
         run: npm run test
 

@@ -25,8 +25,8 @@ jobs:
         run: npm run build-user
 
       - name: Build config2
-        run: npm run build-admin
-
+        run: npm run build:config2
+        
       - name: Test Config
         run: npm run test
 
