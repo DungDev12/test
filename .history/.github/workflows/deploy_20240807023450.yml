@@ -24,12 +24,12 @@ jobs:
       - name: Build client
         run: |
           export PORT=80
-          npm run build-user
+          npm run build:client
 
       - name: Build admin
         run: |
           export PORT=8081
-          npm run build-admin
+          npm run build:admin
 
       - name: List build output
         run: ls -la ./dist
