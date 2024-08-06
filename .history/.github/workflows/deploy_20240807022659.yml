@@ -22,14 +22,18 @@ jobs:
         run: npm ci
 
       - name: Build config1
-        run: |
-          export PORT=80 
-          npm run build-user
+        run: npm run build-user
 
       - name: Build config2
+        run: npm run build-admin
+
+      - name: Start server on port 80
         run: |
-          export PORT=8081
-          npm run build-admin
+          nohup npx serve -s ./dist -l 80
+
+      - name: Start server on port 8081
+        run: |
+          nohup npx serve -s ./dist -l 8081
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
