@@ -33,7 +33,7 @@ jobs:
 
       - name: Start server on port 8081
         run: |
-          nohup npx serve -s ./dist -l 8081n
+          nohup npx serve -s ./dist -l 8081
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

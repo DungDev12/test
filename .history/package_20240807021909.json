@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "",
   "scripts": {
     "dev": "concurrently \"npm run dev-user\" \"npm run dev-admin\"",
     "dev-user": "vite --config vite.config1.js",
@@ -17,10 +16,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "http-server": "^14.1.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "serve": "^14.2.3"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
