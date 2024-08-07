@@ -24,12 +24,12 @@ jobs:
       - name: Build client
         run: |
           export PORT=80
-          npm run deploy-user
+          npm run build-user && 
 
       - name: Build admin
         run: |
           export PORT=8081
-          npm run deploy-admin
+          npm run build-admin
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
